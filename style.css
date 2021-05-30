@@ -2,16 +2,45 @@
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
 }
 
-.about-section, 
-.contact-section,
-.portfolio-section {
+@font-face {
+    font-family: Poppins;
+    src: url(./Poppins-Regular.ttf);
+}
+
+#about-section, 
+#contact-section,
+#portfolio-section {
     height: 100vh;
     max-width: 100%;
 }
 
-.about-section > .bg-img{
+#about-section {
+    position: relative;
+}
+
+#about-section > .bg-img{
     height: 100vh;
     width: 100%;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contact-section {
+    background-color: rgba(207, 175, 127, 0.651);
+}
+
+
+#portfolio-section {
+    background-color: rgba(65, 117, 119, 0.575);
 }
