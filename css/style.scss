@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0%;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", "sans-serif";
 }
@@ -10,12 +10,20 @@
   src: url(./Poppins-Regular.ttf);
 }
 
-html {
-  background: url(./Meteor.svg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+.home {
+  background: url(../images/Meteor.svg) no-repeat center center fixed;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .main-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
 }
 
 .section {
@@ -23,20 +31,6 @@ html {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-}
-
-#home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
 }
 
 .viewMore-btn {
@@ -48,12 +42,12 @@ html {
   padding: 1em 2em;
   background-image: linear-gradient(78deg, #419da3d0, #3c79bb);
   transition: all 0.4s;
-}
 
-.viewMore-btn:hover {
-  cursor: pointer;
-  font-weight: 900;
-  padding: 0.8em 3em;
-  color: #0e2a47;
-  background: white;
+  &:hover {
+    cursor: pointer;
+    font-weight: 900;
+    padding: 0.8em 3em;
+    color: #0e2a47;
+    background: white;
+  }
 }
